@@ -20,4 +20,9 @@ __BASE_URL/rest/V1/customersList/__
 *you can get the list of stock items writing their skus*
 
 ##### Usage
-__BASE_URL/rest//V1/stockItemsList/:productSKUs__ 
+__BASE_URL/rest/V1/stockItemsList/:productSKUs__ 
+#### 3. Get List of Orders
+*you can get the list of order*
+
+##### Usage
+__BASE_URL/rest/V1/ordersEssential/__ 

@@ -6,7 +6,6 @@
     "magento/framework": "101.0.*"
   },
   "type": "magento2-module",
-  "version": "100.0.1",
   "authors": [
     {
       "name": "Aleks Litvinov",

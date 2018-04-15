@@ -5,7 +5,7 @@ namespace Noveo\WebApi\Api;
 interface OrdersEssentialInterface
 {
     /**
-     * @return
+     * @return array
      */
     public function getList();
 }
