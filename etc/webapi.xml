@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/stockItemsList/:productSKUs" method="GET">
+        <service class="Noveo\WebApi\Api\StockItemsInterface" method="getStockItemsList"/>
+        <resources>
+            <resource ref="Magento_CatalogInventory::cataloginventory"/>
+        </resources>
+    </route>
+    <route url="/V1/customersList/" method="GET">
+        <service class="Noveo\WebApi\Api\CustomersListInterface" method="execute"/>
+        <resources>
+            <resource ref="Magento_Customer::customer"/>
+        </resources>
+    </route>
+    <route url="/V1/ordersEssential/" method="GET">
+        <service class="Noveo\WebApi\Api\OrdersEssentialInterface" method="getList"/>
+        <resources>
+            <resource ref="Magento_Sales::sales"/>
+        </resources>
+    </route>
+</routes>
